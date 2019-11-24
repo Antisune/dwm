@@ -7,11 +7,21 @@ Requirements
 ------------
 In order to build dwm you need the Xlib header files.
 
+For voidlinux this means:
+
+libX11-devel
+libXft-devel
+libXinerama-devel
+xporp
+
 
 Installation
 ------------
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).
+for void this means
+X11INC = /usr/include/X11
+x11LIB = /usr/lib/X11
 
 Afterwards enter the following command to build and install dwm (if
 necessary as root):
@@ -46,3 +56,4 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+The config.mk has also been edited to work for voidlinux
